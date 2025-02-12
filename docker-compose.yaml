@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: pg-tasks
+    environment:
+      POSTGRES_DB: tasks
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: pg
+    ports:
+      - "5433:5432"
+

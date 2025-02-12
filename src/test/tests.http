@@ -1,0 +1,21 @@
+@baseUrl = http://localhost:8080
+
+### Get all
+GET {{baseUrl}}/tasks
+
+### Create one
+POST {{baseUrl}}/tasks
+Content-Type: application/json
+
+{
+  "title": "Task 3"
+}
+
+### Get one
+GET {{baseUrl}}/tasks/2
+
+### Mark as completed
+PATCH {{baseUrl}}/tasks/1/complete
+
+### Delete one
+DELETE {{baseUrl}}/tasks/1
